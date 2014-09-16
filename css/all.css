@@ -1202,9 +1202,9 @@ form .btn {
 }
 .information-box h2 {
     font-size: 24px;
-    line-height: 20px;
+    line-height: 29px;
     font-weight: 100;
-    margin: 0 0 18px;
+    margin: 0 0 13px;
 }
 .information-box .column-holder {
     width: 100%;
@@ -1472,4 +1472,147 @@ form .btn {
     font-size: 36px;
     line-height: 38px;
     margin: 0 0 20px;
+}
+.design-services {
+    background: url(../images/sep-02.png)  no-repeat 50% 0;
+    padding: 55px 0;
+    line-height: 24px;
+    position: relative;
+    margin: 0 0 60px;
+}
+.design-services:after {
+    content:'';
+    background: url(../images/sep-01.png)  no-repeat;
+    width: 952px;
+    height: 36px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.design-services .text {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+}
+.design-services h2 {
+    font-size: 36px;
+    line-height: 38px;
+    color: #333;
+    font-weight: 100;
+    margin: 0 0 30px;
+}
+.design-service-list:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.design-service-list {
+    margin:0;
+    padding:0;
+    list-style:none;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+.design-service-list li {
+    display: inline-block;
+    vertical-align: top;
+    padding: 67px 45px 0;
+}
+.design-service-list.add li {padding-top: 98px;}
+.design-service-list .broshures {background: url(../images/bg-broshures.png)  no-repeat 50% 0;}
+.design-service-list .user-interface {
+    background: url(../images/bg-ui.png)  no-repeat 50% 0;
+    margin-top: 63px;
+}
+.design-service-list .web-design {
+    background: url(../images/bg-web-design.png)  no-repeat 50% 0;
+    margin-top:75px;
+}
+.design-service-list .logotypes {
+    background: url(../images/bg-logotypes.png)  no-repeat 50% 0;
+    margin-top: 63px;
+}
+.design-service-list .identity {background: url(../images/bg-identity.png)  no-repeat 50% 0;}
+.design-service-list .seo {
+    background: url(../images/bg-seo.png)  no-repeat 50% 0;
+    margin-top: -85px;
+}
+.design-service-list .smm {
+    background: url(../images/bg-smm.png)  no-repeat 50% 0;
+    margin-top: 30px;
+}
+.design-service-list .ppc {
+    background: url(../images/bg-ppc.png)  no-repeat 50% 0;
+    margin-top: 45px;
+}
+.design-service-list .link-building {
+    background: url(../images/bg-link-building.png)  no-repeat 50% 0;
+    margin-top: 30px;
+}
+.design-service-list .reputation {
+    background: url(../images/bg-reputation.png)  no-repeat 50% 0;
+    margin-top: -85px;
+}
+.information-box .requirement-list {
+    margin:0;
+    padding:0;
+    list-style:none;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+}
+.information-box .requirement-list li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 6px;
+}
+.design-services .text-cloud {
+    background: url(../images/bg-text-cloud.jpg)  no-repeat 50% 0;
+    min-height: 111px;
+    padding: 125px 0;
+}
+.design-services .text-cloud .text {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    color: #333;
+}
+.design-services .text-cloud p {margin: 0;}
+.seo-inform-box {
+    width: 480px;
+    height: 182px;
+    background: url(../images/bg-seo-infrorm-box.jpg)  no-repeat;
+    text-align: center;
+    white-space:nowrap;
+}
+.seo-inform-box:after {
+    content:'';
+    display:inline-block;
+    height:100%;
+    width:1px;
+    overflow:hidden;
+    margin:0 0 0 -1px;
+    vertical-align:middle;
+}
+.seo-inform-box .title {
+    vertical-align:middle;
+    display:inline-block;
+    white-space:normal;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 100;
+}
+.seo-inform-box mark {
+    color: #41a416;
+    background: none;
+}
+.seo-inform-box span {
+    display: block;
+    font-size: 55px;
+    text-transform: uppercase;
 }
