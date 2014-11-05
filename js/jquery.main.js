@@ -1325,3 +1325,15 @@ function initOpenClose() {
         });
     };
 }(jQuery))
+
+$(function(){
+    $(".visual-block-holder").mousemove(function(e){
+        var mouseX = e.pageX - $('.visual-block-holder').offset().left;
+        var totalX = $('.visual-block-holder').width();
+        var centerX = totalX / 2;
+        var shiftX = centerX - mouseX;
+        $('.bg-mountain').css({ 'left': -112 + shiftX/30});
+        $('.bg-clouds').css({ 'left': -224 + shiftX/10});
+        $('.man').css({ 'left': 227 + shiftX/80});
+    });
+})

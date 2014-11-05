@@ -103,6 +103,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     position: relative;
     z-index: 2;
     overflow: hidden;
+    padding: 0 0 7px;
 }
 .nav-holder {
     width: 100%;
@@ -201,13 +202,57 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     width:100%;
     overflow: hidden;
 }
-.visual-block-holder {margin: -136px -180px 0 -224px;}
-.visual-block {
-    padding: 500px 180px 38px 224px;
+.visual-block-holder:after {
+    content:'';
+    background: url(../images/mask-visual-block.png)  no-repeat;
+    width: 1063px;
+    height: 92px;
+    position: absolute;
+    bottom: 31px;
+    left: 0;
+}
+.visual-block-holder:before {
+    content:'';
+    background: url(../images/shadow-visual-block.png)  no-repeat;
+    width: 1063px;
+    height: 459px;
+    position: absolute;
+    top: 10px;
+    left: -45px;
+}
+.visual-block-holder {
     width: 960px;
+    height: 509px;
     margin: 0 auto;
-    background: url(../images/bg-visual-block.png)  no-repeat;
     position: relative;
+}
+.visual-block {
+    width: 100%;
+    height: 394px;
+    padding: 25px 0 0;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.visual-block-holder .man {
+    position: absolute;
+    top: 25px;
+    left: 232px;
+}
+.visual-block-holder .bg-clouds {
+    position: absolute;
+    top: -166px;
+    left: -224px;
+}
+.visual-block .bg-mountain {
+    position: absolute;
+    top: 25px;
+    left: -112px;
+}
+.visual-block .bg-eagle {
+    position: absolute;
+    top: 0;
+    right: 170px;
 }
 .intro-text {
     position: absolute;
@@ -216,18 +261,20 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     line-height: 20px;
     font-weight: 100;
     color: #333;
-    top: 202px;
-    right: 219px;
+    top: 45px;
+    right: 43px;
     width: 280px;
 }
 .intro-text p {margin: 0;}
 .achievements-list {
-    margin:0;
+    margin:-50px auto 10px;
     padding:0;
+    position: relative;
+    z-index: 3;
     list-style:none;
-    width: 100%;
     overflow: hidden;
     font-size: 12px;
+    width: 960px;
     line-height: 18px;
     font-weight: 300;
 }
