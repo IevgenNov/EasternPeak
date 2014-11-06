@@ -657,12 +657,26 @@ form .btn {
     line-height: 18px;
     font-weight: 300;
 }
+#footer:before {
+    top: 0;
+    height: 1px;
+    background: #ccc;
+    content: '';
+    left: -100%;
+    position: absolute;
+    right: -100%;
+    z-index: -1;
+}
+#footer:after {
+    content:'';
+    display:block;
+    clear:both;
+}
 #footer {
     width: 960px;
     margin: 0 auto;
-    overflow: hidden;
+    position: relative;
     padding: 34px 0 45px;
-    border-top: 1px solid #ccc;
 }
 .foot-links {
     width: 100%;
@@ -1293,23 +1307,26 @@ form .btn {
 }
 .thumbnails-holder {
     width: 100%;
-    overflow: hidden;
+    display:table;
     margin: 0 0 60px;
 }
 .thumbnail {
-    float: left;
+    display:table-cell;
     width: 181px;
-    margin: 0 0 0 25px;
     padding: 23px 20px 20px;
     font-weight: 300;
     background: #333;
     border-radius:3px;
     color: #fff;
+    border-left: 29px solid #fff;
 }
-.thumbnail:first-child {margin: 0;}
+.thumbnail:first-child {
+    border: none;
+}
 .thumbnail h3 {
     font-size: 18px;
     line-height: 24px;
+    height: 48px;
     margin: 0 0 22px;
     text-align: center;
 }
@@ -1392,6 +1409,7 @@ form .btn {
 .projects-carousel h3 {
     font-size: 24px;
     line-height: 26px;
+    text-transform: uppercase;
     font-weight: 300;
     color: #41a416;
     margin: 0;
@@ -1399,6 +1417,35 @@ form .btn {
 }
 .projects-carousel .btn-more {float: right;}
 .projects-carousel p {margin: 0 0 30px;}
+.projects-carousel .description-list {margin: 0 0 10px;}
+.projects-carousel .description-list li {padding:0 0 0 19px;}
+.definition-list {
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+}
+.definition-list dt {
+    float: left;
+    clear: left;
+    font-weight: 500;
+}
+.definition-list dd {
+    float: left;
+    margin: 0 0 0 12px;
+}
+.slash-list {
+    margin: 0 0 10px;
+    padding: 0;
+    list-style: none;
+}
+.slash-list li {
+    display: inline;
+    background: url(../images/bg-slash-list.png) no-repeat 0 50%;
+    padding: 0 4px 0 14px;
+    
+}
+.slash-list li:first-child {padding: 0 8px 0 0;}
+.projects-carousel .slash-list {font-weight: 500;}
 .projects-carousel blockquote {
     margin: 0;
     padding: 35px 0 0;
@@ -1617,6 +1664,10 @@ form .btn {
     display: inline-block;
     vertical-align: top;
     margin: 0 6px;
+}
+.information-box .requirement-list.vertical li {
+    display: block;
+    margin: 0 0 10px;
 }
 .design-services .text-cloud {
     background: url(../images/bg-text-cloud.jpg)  no-repeat 50% 0;

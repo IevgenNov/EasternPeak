@@ -1078,7 +1078,7 @@ function initParallaxBg() {
     };
 
     // detect device type
-    var isTouchDevice = /MSIE 10.*Touch/.test(navigator.userAgent) || ('ongesturestart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
+    var isTouchDevice = /MSIE 10.*Touch/.test(navigator.userAgent) || ('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch;
     var oldIe = window.attachEvent && !window.addEventListener;
 
     // jquery parallax plugin
