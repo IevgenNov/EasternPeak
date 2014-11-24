@@ -5,7 +5,7 @@ jQuery(function(){
     initOpenClose();
     initParallaxBg();
     initLightbox();
-    initValidation()
+    initValidation();
     jcf.customForms.replaceAll();
 });
 
@@ -23,19 +23,6 @@ function initCarousel() {
         switchTime: 3000,
         animSpeed: 500,
         step: 3
-    });
-    jQuery('div.switcher-carousel').scrollGallery({
-        mask: 'div.switcher-mask',
-        slider: 'div.switcher-slideset',
-        slides: '.switch-slide',
-        btnPrev: 'a.btn-prev',
-        btnNext: 'a.btn-next',
-        pagerLinks: '.pagination li',
-        maskAutoSize: false,
-        autoRotation: false,
-        switchTime: 3000,
-        animSpeed: 500,
-        step: 1
     });
 }
 
@@ -560,7 +547,32 @@ function initSlideShow() {
         autoRotation: false,
         autoHeight: true,
         switchTime: 3000,
-        animSpeed: 500
+        animSpeed: 500,
+        onInit: function(){
+            this.gallery.find('div.switcher-carousel').scrollGallery({
+                mask: 'div.switcher-mask',
+                slider: 'div.switcher-slideset',
+                slides: '.switch-slide',
+                btnPrev: 'a.btn-prev',
+                btnNext: 'a.btn-next',
+                pagerLinks: '.switch-slide',
+                maskAutoSize: false,
+                autoRotation: false,
+                switchTime: 3000,
+                animSpeed: 500,
+                step: 1
+            });
+            this.switcherAPI = this.gallery.find('div.switcher-carousel').data('ScrollGallery');
+        },
+        onBeforeChange: function(){
+            var switchSlide = $('.switcher-carousel .active');
+            switchSlide.find('.switch-slide-holder').css('margin', '0');
+            switchSlide.next().find('.switch-slide-holder').css('margin', '50px 32px 14px 32px');
+            switchSlide.next().next().find('.switch-slide-holder').css('margin', '64px 32px 0 32px');
+            switchSlide.prev().find('.switch-slide-holder').css('margin', '50px 32px 14px 32px');
+            switchSlide.prev().prev().find('.switch-slide-holder').css('margin', '64px 32px 0 32px');
+        }
+
     });
     jQuery('.projects-slideshow').fadeGallery({
         slides: 'div.slide',
@@ -2649,7 +2661,8 @@ $(function(){
         $('.bg-clouds').css({ 'left': -224 + shiftX/10});
         $('.man').css({ 'left': 227 + shiftX/80});
     });
-    var formRow = $('.portfolio-form .row'),
-        error_message = $('.portfolio-form .error-message');
-    if (formRow.hasClass('error')) error_message.fadeOut(1000);
+    var switchSlide = $('.switcher-carousel .active');
+    switchSlide.find('.switch-slide-holder').css('margin', '0');
+    switchSlide.next().find('.switch-slide-holder').css('margin', '50px 32px 14px 32px');
+    switchSlide.next().next().find('.switch-slide-holder').css('margin', '64px 32px 0 32px');
 })

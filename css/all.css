@@ -1227,17 +1227,16 @@ form .btn {
     background: none;
 }
 .switcher-carousel {
-    width: 100%;
+    width: 800px;
     overflow: hidden;
     position: relative;
     z-index: 4;
-    margin: -117px 0 0;
+    margin: -117px auto 0;
 }
 .switcher-carousel .switcher-mask {
     position: relative;
     width: 160px;
     margin:0 auto;
-    overflow: visible !important;
 }
 .switcher-carousel .switcher-slideset {
     float: left;
@@ -1265,6 +1264,7 @@ form .btn {
     width: 160px;
     height: 160px;
     margin: 0;
+
 }
 .switcher-carousel .switch-slide img {
     max-width: 100%;
