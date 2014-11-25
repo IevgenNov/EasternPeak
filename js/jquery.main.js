@@ -2657,9 +2657,9 @@ $(function(){
         var totalX = $('.visual-block-holder').width();
         var centerX = totalX / 2;
         var shiftX = centerX - mouseX;
-        $('.bg-mountain').css({ 'left': -112 + shiftX/30});
-        $('.bg-clouds').css({ 'left': -224 + shiftX/10});
-        $('.man').css({ 'left': 227 + shiftX/80});
+        $('.bg-mountain').css({ 'left': -112 + shiftX/80});
+        $('.bg-clouds').css({ 'left': -224 + shiftX/90});
+        $('.man').css({ 'left': 227 + shiftX/50});
     });
     var switchSlide = $('.switcher-carousel .active');
     switchSlide.find('.switch-slide-holder').css('margin', '0');
