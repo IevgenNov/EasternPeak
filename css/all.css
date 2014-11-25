@@ -1029,7 +1029,7 @@ form .btn {
     vertical-align: middle;
     text-align: center;
 }
-.request-block .send-request {margin: 0 20px 0 0;}
+.request-block .send-request {margin: 0 9px 0 0;}
 .send-request .btn {margin-bottom:17px;}
 .send-request .btn:active {margin-bottom: 12px;}
 .send-request .sub-text {
@@ -1052,7 +1052,7 @@ form .btn {
 }
 .works-slideshow {
     position: relative;
-    padding: 48px 0 60px;
+    padding: 16px 0 49px 4px;
 }
 .works-slideshow .slideset {
     position: relative;
@@ -1062,19 +1062,11 @@ form .btn {
     content:'';
     position: absolute;
     z-index: 3;
-    bottom: 5px;
+    bottom: 0;
     left: 0;
     background: url(../images/bg-works-slideshow.png) no-repeat;
     width: 952px;
     height: 35px;
-}
-.works-slideshow .slide:before {
-    content: '';
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin-right: -0.25em;
-    width: 1px;
 }
 .works-slideshow .slide {
     position: absolute;
@@ -1082,18 +1074,19 @@ form .btn {
     left: 0;
     top: 0;
     width: 100%;
-    min-height: 528px;
+    min-height: 543px;
 }
 .works-slideshow .slide.active {
     z-index: 2;
 }
 .works-slideshow .slide img {
-    display: inline-block;
-    vertical-align: bottom;
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .works-slideshow .text-holder {
     position: absolute;
-    top: 0;
+    top: 28px;
     right: 0;
     text-align: right;
     padding: 0 20px 0 0;
@@ -1144,7 +1137,7 @@ form .btn {
 .works-slideshow .sub-title-block h3 {
     font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
     color: #333;
-    margin: 0 0 13px;
+    margin: 0 0 14px;
 }
 .works-slideshow .sub-title-block mark {
     color: #42a517;
@@ -1155,7 +1148,7 @@ form .btn {
     overflow: hidden;
     position: relative;
     z-index: 4;
-    margin: -117px auto 0;
+    margin: -128px auto 10px;
 }
 .switcher-carousel .switcher-mask {
     position: relative;
@@ -1245,8 +1238,8 @@ form .btn {
     width: 46px;
     height: 46px;
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 16px;
+    left: 14px;
     border: 2px solid #41a416;
     border-radius:50%;
 }
@@ -1254,8 +1247,8 @@ form .btn {
     text-indent: -9999px;
     overflow: hidden;
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 16px;
+    left: 14px;
     border-radius:50%;
     width: 50px;
     height: 50px;
@@ -1264,13 +1257,12 @@ form .btn {
 }
 .development-nav .slide-list {
     margin:0;
-    padding:0;
     list-style:none;
     border-radius:24px 0 0 0;
     background:#424242 url(../images/bg-slide-list.png)  no-repeat 100% 100%;
     position: absolute;
-    top: 10px;
-    left: 0;
+    top: 16px;
+    left: 14px;
     width: 210px;
     padding: 25px 30px 12px 0;
     text-align: right;
@@ -1287,7 +1279,7 @@ form .btn {
 .service-description {
     width: 100%;
     overflow: hidden;
-    padding: 50px 0 55px;
+    padding: 50px 0 54px;
 }
 .service-description .img-holder {
     float: left;
@@ -1298,7 +1290,7 @@ form .btn {
 .service-description .text-holder p {margin: 0 0 30px;}
 .information-box {
     border: 5px solid #6dc442;
-    padding: 22px 25px 25px;
+    padding: 22px 25px 15px;
     text-align: center;
 }
 .information-box h2 {
@@ -1339,17 +1331,17 @@ form .btn {
 .web-services h2 {
     font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
     color: #333;
-    margin: 0 0 30px;
+    margin: 0 0 31px;
 }
 .thumbnails-holder {
     width: 100%;
     display:table;
-    margin: 0 0 60px;
+    margin: 0 0 61px;
 }
 .thumbnail {
     display:table-cell;
-    width: 181px;
-    padding: 23px 20px 20px;
+    width: 191px;
+    padding: 19px 15px 20px;
     background: #333;
     border-radius:3px;
     color: #fff;
@@ -1369,8 +1361,10 @@ form .btn {
     height: 75px;
     line-height: 75px;
     text-align: center;
+    margin: 0 0 25px;
 }
 .thumbnail .img-holder img {vertical-align: middle;}
+.thumbnail p {margin: 0;}
 .thumbnail .sub-text {
     text-align: right;
     color: #929292;
@@ -1383,7 +1377,7 @@ form .btn {
 .advantages-block {
     background:#f1fbea url(../images/bg-advantages-block.png)  no-repeat 0 100%;
     overflow: hidden;
-    padding: 30px 35px 35px;
+    padding: 26px 35px 35px 37px;
     margin: 0 0 45px;
 }
 .advantages-block h3 {
@@ -1497,7 +1491,7 @@ form .btn {
 
 .cooperation-block .text-block {
     overflow: hidden;
-    padding: 30px 0;
+    padding: 24px 0 31px;
     color: #fff;
     font-size: 18px;
     line-height: 24px;
@@ -1509,9 +1503,9 @@ form .btn {
 .cooperation-block h2 {
     font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
     color: #fff;
-    margin: 0 0 25px;
+    margin: 0 0 23px;
 }
-.cooperation-block .text-block p {margin: 0 0 35px;}
+.cooperation-block .text-block p {margin: 0 0 36px;}
 .cooperation-block .columns-holder {
     width: 100%;
     overflow: hidden;
@@ -1528,8 +1522,9 @@ form .btn {
 .cooperation-block .column h3 {
     font-size: 24px;
     line-height: 26px;
-    margin: 0 0 30px;
+    margin: 0 0 24px;
 }
+.cooperation-block .column p {margin: 0;}
 .apps-services {
     width: 100%;
     overflow: hidden;
@@ -1567,7 +1562,7 @@ form .btn {
     left: 0;
 }
 .not-found-holder {
-    padding: 96px 0 96px;
+    padding: 83px 0 96px;
     text-align: center;
     overflow: hidden;
     width: 100%;
@@ -1576,10 +1571,10 @@ form .btn {
     float: none;
     display: inline-block;
     vertical-align: top;
-    margin: 0 0 158px;
+    margin: 0 0 156px;
 }
 .not-found-block {
-    padding: 230px 0 0;
+    padding: 232px 0 0;
     background: url(../images/bg-not-found.png)  no-repeat 50% 0;
     font-size: 12px;
     line-height: 18px;
@@ -1692,7 +1687,7 @@ form .btn {
 .design-services .text-cloud {
     background: url(../images/bg-text-cloud.jpg)  no-repeat 50% 0;
     min-height: 111px;
-    padding: 125px 0;
+    padding: 120px 0 124px;
 }
 .design-services .text-cloud .text {
     font:100 22px/26px 'HelveticaNeue', Arial, Helvetica, sans-serif;
