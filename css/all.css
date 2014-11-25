@@ -111,11 +111,11 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     border-radius: 3px 3px 0 0;
     background: #424242;
     border-bottom: 4px solid #378a13;
-    margin: 0 0 31px;
+    margin: 0 0 29px;
 }
 #nav {
     float: left;
-    padding: 18px 0 0 15px;
+    padding: 18px 0 0 13px;
     font-size: 12px;
     line-height: 14px;
     text-transform: uppercase;
@@ -128,7 +128,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
 }
 #nav li {
     float: left;
-    padding: 0 15px;
+    padding: 0 17px;
 }
 #nav a {color: #fff;}
 #nav a:hover {
@@ -196,7 +196,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     float: left;
     margin: 0 0 0 47px;
     background: url(../images/sprite.png)  no-repeat -204px -26px;
-    padding: 0 0 0 30px;
+    padding: 0 0 0 29px;
 }
 .content {
     width:100%;
@@ -223,7 +223,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
 .visual-block-holder {
     width: 960px;
     height: 509px;
-    margin: 0 auto;
+    margin: 0 auto 31px;
     position: relative;
 }
 .visual-block {
@@ -261,13 +261,13 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     line-height: 20px;
     font-weight: 100;
     color: #333;
-    top: 45px;
-    right: 43px;
+    top: 63px;
+    right: 56px;
     width: 280px;
 }
 .intro-text p {margin: 0;}
 .achievements-list {
-    margin:-50px auto 10px;
+    margin:-58px auto 10px;
     padding:0;
     position: relative;
     z-index: 3;
@@ -280,7 +280,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
 }
 .achievements-list li {
     float: left;
-    padding: 78px 2px 0;
+    padding: 71px 2px 0;
     width: 154px;
     position: relative;
     text-align: center;
@@ -316,7 +316,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     width: 100%;
     overflow: hidden;
     border-top: 1px solid #8ed16c;
-    padding: 30px 0 0;
+    padding: 25px 0 37px;
 }
 .services .title-block {
     float: left;
@@ -324,16 +324,17 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     font-size: 12px;
     line-height: 18px;
     font-weight: 300;
+    padding: 0 21px 0 0;
 }
 .services h1 {
     font-size: 36px;
     line-height: 38px;
     color: #666;
-    margin: 0 0 20px;
+    margin: 0 0 15px;
     font-weight: 100;
 }
-.services .title-block .text {margin: 0 0 58px;}
-.services .title-block p {margin: 0 0 22px;}
+.services .title-block .text {margin: 0 0 56px;}
+.services .title-block p {margin: 0 0 18px;}
 .btn {
     display: inline-block;
     vertical-align: top;
@@ -378,21 +379,22 @@ form .btn {
 .services-carousel {
 	position: relative;
     float: right;
-    width: 750px;
+    width: 729px;
     text-align: center;
 }
 .services-carousel .mask {
 	position: relative;
 	overflow: hidden;
-	width: 750px;
+	width: 729px;
+    margin: 0 0 4px;
 }
 .services-carousel .slideset {
 	width: 99999px;
 	float: left;
 }
 .services-carousel .slide {
-	width: 230px;
-    padding: 0 10px;
+	width: 205px;
+    padding: 15px 19px 0;
 	float: left;
     text-align: left;
     font-size: 14px;
@@ -405,6 +407,11 @@ form .btn {
     line-height: 20px;
     font-weight: 500;
     margin: 0 0 33px;
+}
+.services-carousel  p {margin: 0 0 10px;}
+.services-carousel .img-holder {
+    min-height: 130px;
+    margin: 0 0 28px;
 }
 .services-carousel h2 mark {
     background: none;
@@ -460,7 +467,7 @@ form .btn {
 .company-benefits .text-block {
     width: 960px;
     margin: 0 auto;
-    padding: 30px 0 47px;
+    padding: 28px 0 27px;
 }
 .company-benefits h1 {
     font-size: 36px;
@@ -468,7 +475,7 @@ form .btn {
     color: #fff;
     font-weight: 100;
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 34px;
 }
 .benefits-holder {
     width: 100%;
@@ -569,7 +576,7 @@ form .btn {
     text-align: right;
     display: inline-block;
     vertical-align: top;
-    padding: 0 28px 0 0;
+    padding: 0 27px 0 0;
     color: #41a416;
 }
 .btn-more:hover {text-decoration: none;}
@@ -587,7 +594,7 @@ form .btn {
 .testimonials-holder blockquote {
     float: left;
     width: 290px;
-    padding: 0 15px;
+    padding: 0 7px;
     margin: 0;
     text-align: center;
 }
@@ -598,7 +605,7 @@ form .btn {
     font-weight: 100;
     display: block;
     color: #333;
-    padding: 25px 0 5px;
+    padding: 18px 0 4px;
     background: url(../images/bg-blockquote.png)  no-repeat 50% 0;
 }
 .testimonials-holder cite {
@@ -609,29 +616,30 @@ form .btn {
     background: none;
     color: #41a416;
 }
+.testimonials-holder .btn-more {margin: -3px 0 0;}
 .representatives-holder {
     width: 100%;
     overflow: hidden;
-    padding: 0 0 50px;
+    padding: 0 0 53px;
 }
 .representatives-holder .text {
     width: 420px;
     float: left;
     font-weight: 300;
 }
-.representatives-holder p {margin: 0 0 22px;}
+.representatives-holder p {margin: 0 0 20px;}
 .office-holder {
     float: right;
     width: 474px;
     border: 5px solid #6dc442;
     background: #fff;
-    padding: 20px 0 22px;
+    padding: 20px 0 21px;
 }
 .office-holder .office {
     float: left;
     position: relative;
     width: 110px;
-    padding: 100px 24px 0;
+    padding: 94px 24px 0;
     text-align: center;
 }
 .office-holder .office.usa {background: url(../images/bg-usa.png)  no-repeat 50% 20px;}
@@ -653,7 +661,7 @@ form .btn {
     line-height: 20px;
     font-weight: 500;
     display: block;
-    margin: 0 0 7px;
+    margin: 0 0 5px;
 }
 .office-holder .office address {
     font-style: normal;
@@ -680,12 +688,12 @@ form .btn {
     width: 960px;
     margin: 0 auto;
     position: relative;
-    padding: 34px 0 45px;
+    padding: 34px 0 46px;
 }
 .foot-links {
     width: 100%;
     overflow: hidden;
-    padding: 0 0 30px;
+    padding: 0 0 28px;
 }
 .foot-nav {
     float: left;
@@ -693,7 +701,7 @@ form .btn {
     line-height: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 6px 0 0;
+    margin: 8px 0 0;
 }
 .foot-nav ul {
     margin:0;
@@ -703,7 +711,7 @@ form .btn {
 }
 .foot-nav li {
     float: left;
-    margin: 0 30px 0 0;
+    margin: 0 34px 0 0;
 }
 .foot-nav a {color: #46a719;}
 .social-networks {
@@ -739,14 +747,14 @@ form .btn {
 /*contact page styles*/
 .main-title {
     text-align: center;
-    padding: 0 0 56px;
+    padding: 46px 0 56px;
     background: url(../images/sep-01.png)  no-repeat 0 100%;
 }
 .main-title h1 {
     font-size: 76px;
     line-height: 78px;
     font-weight: 100;
-    margin: 0 0 15px;
+    margin: 0 0 12px;
     color: #41a416;
 }
 .main-title .sub-text {
@@ -756,8 +764,7 @@ form .btn {
     color: #333;
 }
 .contact-holder {
-    padding: 15px 0 60px;
-    width: 100%;
+    padding: 17px 10px 60px 11px;
     overflow: hidden;
 }
 .contact-form {
@@ -768,7 +775,8 @@ form .btn {
 .contact-form .row {
     width: 100%;
     overflow: hidden;
-    margin: 0 0 27px;
+    position: relative;
+    margin: 0 0 25px;
 }
 .contact-form .row label {
     font-size: 14px;
@@ -778,25 +786,31 @@ form .btn {
     margin: 0 0 13px;
     color: #333;
 }
+.contact-form .row .error-text {
+    font-size: 14px;
+    line-height: 18px;
+    color: #f60;
+    position: absolute;
+    bottom: 13px;
+    right: 15px;
+    display: none;
+}
+.contact-form .row.error .error-text {display: block;}
 .contact-form .row input[type="text"],
 .contact-form .row input[type="email"] {
     border:2px solid #66cc33;
     border-radius:5px;
     font-size: 14px;
     line-height: 18px;
-    padding: 10px 13px;
+    padding: 9px 13px 11px;
     width: 402px;
     height: 18px;
     background: #fff;
     font-weight: 300;
     box-shadow:inset 0 2px 0 #e5e5e5;
 }
-.contact-form .row input[type="text"].error,
-.contact-form .row input[type="email"].error {
-    border-color: #f60;
-    text-align: right;
-    color: #f60;
-}
+.contact-form .row.error input[type="text"],
+.contact-form .row.error input[type="email"] {border-color: #f60;}
 .contact-form .row textarea {
     border:2px solid #66cc33;
     border-radius:5px;
@@ -818,7 +832,7 @@ form .btn {
     float: left;
     margin: 0 20px 5px 0;
 }
-.send-holder .btn:active {margin: 5px 20px 5px 0;}
+.send-holder .btn:active {margin: 5px 20px 0 0;}
 .send-holder .description {
     font-size: 12px;
     line-height: 37px;
@@ -827,11 +841,11 @@ form .btn {
 }
 .consult-holder {
     float: left;
-    width: 230px;
-    margin: 0 9px 0 0;
+    width: 220px;
+    padding: 23px 18px 0 0;
 }
 .consult-block {
-    margin: 0 0 35px;
+    margin: 0 0 33px;
     overflow: hidden;
 }
 .consult-block h2 {
@@ -839,7 +853,7 @@ form .btn {
     line-height: 20px;
     font-weight: 500;
     color: #333;
-    margin: 0 0 20px;
+    margin: 0 0 22px;
 }
 .featured-list {
     font-size: 12px;
@@ -864,7 +878,7 @@ form .btn {
     font-weight: 100;
     color: #46a218;
     display: block;
-    margin: 0 0 6px;
+    margin: 0 0 2px;
 }
 .consultant-info .position {
     font-size: 12px;
@@ -872,7 +886,7 @@ form .btn {
     font-weight: 300;
     display: block;
     color: #333;
-    margin: 0 0 9px;
+    margin: 0 0 12px;
 }
 .consultant-info .skype {
     display: inline-block;
@@ -888,14 +902,14 @@ form .btn {
 .contact-holder .office-holder {
     width: 192px;
     float: right;
-    padding: 20px;
+    padding: 20px 20px 32px;
     text-align: center;
 }
 .contact-holder .office-holder h2 {
     font-size: 18px;
     line-height: 20px;
     font-weight: 500;
-    margin: 0 0 30px;
+    margin: 0 0 13px;
     color: #41a416;
     text-align: left;
 }
@@ -903,14 +917,15 @@ form .btn {
     float: none;
     display: inline-block;
     vertical-align: top;
-    margin: 0 0 45px;
+    margin: 0 0 35px;
+    padding: 94px 0 0;
+    width: 175px;
     text-align: center;
 }
 .contact-holder .office-holder .office:after {background: none;}
 .whitepapers-holder {
-    padding: 60px 0 75px;
+    padding: 53px 24px 75px 10px;
     background: url(../images/sep-02.png)  no-repeat;
-    width: 100%;
     overflow: hidden;
 }
 .whitepapers-holder h3 {
@@ -923,6 +938,7 @@ form .btn {
 .document-holder {
     float: right;
     width: 703px;
+    margin: 10px 0 0;
 }
 .document-holder .document {
     width: 135px;
@@ -947,7 +963,7 @@ form .btn {
     margin: 0 0 20px;
 }
 .add-nav-holder {
-    padding: 50px 0 30px;
+    padding: 8px 0 19px;
     border-bottom: 1px solid #8ed16c;
     width: 100%;
     position: relative;
@@ -962,7 +978,7 @@ form .btn {
     float: left;
     line-height: 18px;
     font-weight: 500;
-    margin: 22px 0 0;
+    margin: 32px 0 0;
 }
 .add-nav ul {
     margin:0;
@@ -995,17 +1011,16 @@ form .btn {
 .services-section {
     width: 695px;
     float: left;
-    padding: 39px 0 45px;
+    padding: 39px 0 16px;
 }
 .service {
-    margin: 0 0 65px;
-    width: 100%;
+    padding: 0 0 40px 10px;
     overflow: hidden;
 }
 .service .visual {
     float: left;
     width: 350px;
-    margin: 0 5px 0 0;
+    margin: 0 -30px 0 0;
 }
 .service .visual.align-right {
     float: right;
@@ -1013,9 +1028,9 @@ form .btn {
 }
 .service .visual img {
     display: block;
-    margin: 0 0 25px;
+    margin: 0 0 23px;
 }
-.service .btn-holder {text-align: center;}
+.service .btn-more {margin: 0 0 0 95px;}
 .service .text {
     overflow: hidden;
     padding: 20px 0 0;
@@ -1025,7 +1040,7 @@ form .btn {
     line-height: 42px;
     color: #333;
     font-weight: 100;
-    margin: 0 0 20px;
+    margin: 0 0 16px;
 }
 .service h2 span {
     display: inline-block;
@@ -1047,7 +1062,7 @@ form .btn {
 .service .text p {margin:0;}
 .approach-block {
     float: right;
-    padding: 40px 20px 40px;
+    padding: 35px 20px 44px;
     width: 201px;
     background:#f1fbea url(../images/bg-approach.png)  no-repeat 0 100%;
     font-size: 12px;
@@ -1060,10 +1075,11 @@ form .btn {
     line-height: 20px;
     font-weight: 500;
     color: #333;
-    margin: 0 0 17px;
+    margin: 0 0 16px;
 }
 .approach-block .color-green {color: #3d9d14;}
-.approach-block .text-holder {margin: 0 0 48px;}
+.approach-block .text-holder {margin: 0 0 42px;}
+.approach-block .text-holder p {margin: 0 0 18px;}
 .description-list {
     margin:0;
     padding:0;
@@ -1071,14 +1087,14 @@ form .btn {
     overflow: hidden;
 }
 .description-list li {
-    padding: 0 0 23px 19px;
+    padding: 0 0 18px 19px;
     background: url(../images/bg-description-list.png)  no-repeat 0 6px;
 }
 .request-block {
     width: 100%;
     background: #fafafa;
     position: relative;
-    padding: 44px 0 35px;
+    padding: 44px 0 37px;
 }
 .request-block:after {
     content:'';
@@ -1101,8 +1117,8 @@ form .btn {
     text-align: center;
 }
 .request-block .send-request {margin: 0 20px 0 0;}
-.send-request .btn {margin-bottom:20px;}
-.send-request .btn:active {margin-bottom: 15px;}
+.send-request .btn {margin-bottom:17px;}
+.send-request .btn:active {margin-bottom: 12px;}
 .send-request .sub-text {
     display: block;
     font-size: 12px;
