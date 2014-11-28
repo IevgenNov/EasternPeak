@@ -1,5 +1,45 @@
 @font-face {
     font-family:'HelveticaNeue';
+    src:url('../fonts/HelveticaNeue.eot');
+    src:url('../fonts/HelveticaNeue?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue.woff') format('woff'),
+        url('../fonts/HelveticaNeue.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:'HelveticaNeue';
+    src:url('../fonts/HelveticaNeue-Medium.eot');
+    src:url('../fonts/HelveticaNeue-Medium?#iefix') format('embedded-opentype'),
+        url('../fonts/HelveticaNeue-Medium.woff') format('woff'),
+        url('../fonts/HelveticaNeue-Medium.ttf') format('truetype'),
+        url('../fonts/HelveticaNeue-Medium.svg') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family:'HelveticaNeue';
+    src:url('../fonts/helveticaneuebold.eot');
+    src:url('../fonts/helveticaneuebold?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneuebold.woff') format('woff'),
+        url('../fonts/helveticaneuebold.ttf') format('truetype'),
+        url('../fonts/helveticaneuebold.svg') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family:'HelveticaNeue';
+    src:url('../fonts/helveticaneuelight.eot');
+    src:url('../fonts/helveticaneuelight?#iefix') format('embedded-opentype'),
+        url('../fonts/helveticaneuelight.woff') format('woff'),
+        url('../fonts/helveticaneuelight.ttf') format('truetype'),
+        url('../fonts/helveticaneuelight.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family:'HelveticaNeue';
     src:url('../fonts/helveticaneue-thin-webfont.eot');
     src:url('../fonts/helveticaneue-thin-webfont?#iefix') format('embedded-opentype'),
     url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
@@ -8,10 +48,20 @@
     font-weight: 100;
     font-style: normal;
 }
+@font-face {
+    font-family:'HelveticaNeue';
+    src:url('../fonts/helveticaneue-black-webfont.eot');
+    src:url('../fonts/helveticaneue-black-webfont?#iefix') format('embedded-opentype'),
+    url('../fonts/helveticaneue-black-webfont.woff') format('woff'),
+    url('../fonts/helveticaneue-black-webfont.ttf') format('truetype'),
+    url('../fonts/helveticaneue-black-webfont.svg') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
 body {
     margin:0;
     color:#666;
-    font:14px/20px Arial, Helvetica, sans-serif;
+    font:14px/20px 'HelveticaNeue', Arial, Helvetica, sans-serif;
     background: url(../images/bg-page.png)  no-repeat 100% 0;
     border-top: 5px solid #378a13;
 }
@@ -26,7 +76,7 @@ a:active {background-color: transparent;}
 input,
 textarea,
 select {
-    font:100% Arial, Helvetica, sans-serif;
+    font:100% 'HelveticaNeue', Arial, Helvetica, sans-serif;
     vertical-align:middle;
     color:#666;
     outline:none;
@@ -207,7 +257,9 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
 .intro-text {
     position: absolute;
     text-align: center;
-    font:100 15px/20px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 100;
     color: #333;
     top: 63px;
     right: 56px;
@@ -224,6 +276,7 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     font-size: 12px;
     width: 960px;
     line-height: 18px;
+    font-weight: 300;
 }
 .achievements-list li {
     float: left;
@@ -270,12 +323,15 @@ blockquote:before, blockquote:after, q:before, q:after {content: '';}
     width: 210px;
     font-size: 12px;
     line-height: 18px;
+    font-weight: 300;
     padding: 0 21px 0 0;
 }
 .services h1 {
+    font-size: 36px;
+    line-height: 38px;
     color: #666;
     margin: 0 0 15px;
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
 }
 .services .title-block .text {margin: 0 0 56px;}
 .services .title-block p {margin: 0 0 18px;}
@@ -349,6 +405,7 @@ form .btn {
     color: #333;
     font-size: 18px;
     line-height: 20px;
+    font-weight: 500;
     margin: 0 0 33px;
 }
 .services-carousel  p {margin: 0 0 10px;}
@@ -413,8 +470,10 @@ form .btn {
     padding: 28px 0 27px;
 }
 .company-benefits h1 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
     color: #fff;
+    font-weight: 100;
     text-align: center;
     margin: 0 0 34px;
 }
@@ -457,6 +516,7 @@ form .btn {
 .benefit.quality {
     font-size: 18px;
     line-height: 24px;
+    font-weight: 500;
     text-align: center;
     background:#333 url(../images/bg-quality.png)  no-repeat 100% 0;
 }
@@ -501,7 +561,7 @@ form .btn {
     color: #1c7673;
     font-size: 10px;
     line-height: 12px;
-    font-weight: bold;
+    font-weight: 900;
     padding: 5px;
     border-radius:4px;
     border:2px solid #1c7673;
@@ -512,6 +572,7 @@ form .btn {
     background: url(../images/bg-btn-more.png)  no-repeat 100% 50%;
     font-size: 14px;
     line-height: 18px;
+    font-weight: 500;
     text-align: right;
     display: inline-block;
     vertical-align: top;
@@ -539,7 +600,9 @@ form .btn {
 }
 
 .testimonials-holder q {
-    font:100 41px/49px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 41px;
+    line-height: 49px;
+    font-weight: 100;
     display: block;
     color: #333;
     padding: 18px 0 4px;
@@ -562,6 +625,7 @@ form .btn {
 .representatives-holder .text {
     width: 420px;
     float: left;
+    font-weight: 300;
 }
 .representatives-holder p {margin: 0 0 20px;}
 .office-holder {
@@ -595,6 +659,7 @@ form .btn {
     color: #333;
     font-size: 18px;
     line-height: 20px;
+    font-weight: 500;
     display: block;
     margin: 0 0 5px;
 }
@@ -602,6 +667,7 @@ form .btn {
     font-style: normal;
     font-size: 12px;
     line-height: 18px;
+    font-weight: 300;
 }
 #footer:before {
     top: 0;
@@ -685,12 +751,16 @@ form .btn {
     background: url(../images/sep-01.png)  no-repeat 0 100%;
 }
 .main-title h1 {
-    font:100 76px/78px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 76px;
+    line-height: 78px;
+    font-weight: 100;
     margin: 0 0 12px;
     color: #41a416;
 }
 .main-title .sub-text {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 100;
     color: #333;
 }
 .contact-holder {
@@ -736,6 +806,7 @@ form .btn {
     width: 402px;
     height: 18px;
     background: #fff;
+    font-weight: 300;
     box-shadow:inset 0 2px 0 #e5e5e5;
 }
 .contact-form .row.error input[type="text"],
@@ -766,6 +837,7 @@ form .btn {
     font-size: 12px;
     line-height: 37px;
     color: #999;
+    font-weight: 300;
 }
 .consult-holder {
     float: left;
@@ -779,6 +851,7 @@ form .btn {
 .consult-block h2 {
     font-size: 18px;
     line-height: 20px;
+    font-weight: 500;
     color: #333;
     margin: 0 0 22px;
 }
@@ -800,7 +873,9 @@ form .btn {
 .consultant-info {text-align: center;}
 .consultant-info img {margin: 0 0 15px;}
 .consultant-info .consultant-name {
-    font:100 24px/26px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 100;
     color: #46a218;
     display: block;
     margin: 0 0 2px;
@@ -808,6 +883,7 @@ form .btn {
 .consultant-info .position {
     font-size: 12px;
     line-height: 14px;
+    font-weight: 300;
     display: block;
     color: #333;
     margin: 0 0 12px;
@@ -816,7 +892,9 @@ form .btn {
     display: inline-block;
     vertical-align: top;
     padding: 0 0 0 47px;
-    font:100 24px/34px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 100;
     background: url(../images/sprite.png)  no-repeat -131px -93px;
     color: #333;
 }
@@ -830,6 +908,7 @@ form .btn {
 .contact-holder .office-holder h2 {
     font-size: 18px;
     line-height: 20px;
+    font-weight: 500;
     margin: 0 0 13px;
     color: #41a416;
     text-align: left;
@@ -872,6 +951,7 @@ form .btn {
 .document-holder .document h4 {
     font-size: 14px;
     line-height: 18px;
+    font-weight: 500;
     color: #333;
     margin: 0 0 7px;
 }
@@ -897,6 +977,7 @@ form .btn {
 .add-nav {
     float: left;
     line-height: 18px;
+    font-weight: 500;
     margin: 32px 0 0;
 }
 .add-nav ul {
@@ -917,7 +998,9 @@ form .btn {
 .add-nav .active a {color: #41a416;}
 .add-nav-holder h1 {
     float: right;
-    font:100 76px/78px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 76px;
+    line-height:78px;
+    font-weight: 100;
     margin: 0;
     color: #41a416;
 }
@@ -953,8 +1036,10 @@ form .btn {
     padding: 20px 0 0;
 }
 .service h2 {
-    font:100 36px/42px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 42px;
     color: #333;
+    font-weight: 100;
     margin: 0 0 16px;
 }
 .service h2 span {
@@ -982,11 +1067,13 @@ form .btn {
     background:#f1fbea url(../images/bg-approach.png)  no-repeat 0 100%;
     font-size: 12px;
     line-height: 18px;
+    font-weight: 300;
 
 }
 .approach-block h3 {
     font-size: 18px;
     line-height: 20px;
+    font-weight: 500;
     color: #333;
     margin: 0 0 16px;
 }
@@ -1037,6 +1124,7 @@ form .btn {
     font-size: 12px;
     line-height: 14px;
     color: #999;
+    font-weight: 300;
 }
 .request-block h3 {
     color: #333;
@@ -1045,6 +1133,7 @@ form .btn {
     vertical-align: middle;
     font-size: 18px;
     line-height: 20px;
+    font-weight: 500;
 }
 .request-block .featured-list {
     display: inline-block;
@@ -1105,6 +1194,7 @@ form .btn {
     font-size: 18px;
     line-height: 20px;
     color: #333;
+    font-weight: 500;
     margin: 0 0 20px;
 }
 .works-slideshow .text-holder p {margin: 0 0 20px;}
@@ -1142,7 +1232,9 @@ form .btn {
     text-align: center;
 }
 .works-slideshow .sub-title-block h3 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 100;
     color: #333;
     margin: 0 0 13px;
 }
@@ -1302,7 +1394,9 @@ form .btn {
     text-align: center;
 }
 .information-box h2 {
-    font:100 24px/29px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 100;
     margin: 0 0 13px;
 }
 .information-box .column-holder {
@@ -1337,7 +1431,9 @@ form .btn {
     overflow:hidden;
 }
 .web-services h2 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 100;
     color: #333;
     margin: 0 0 30px;
 }
@@ -1350,6 +1446,7 @@ form .btn {
     display:table-cell;
     width: 181px;
     padding: 23px 20px 20px;
+    font-weight: 300;
     background: #333;
     border-radius:3px;
     color: #fff;
@@ -1387,8 +1484,10 @@ form .btn {
     margin: 0 0 45px;
 }
 .advantages-block h3 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
     color: #333;
+    font-weight: 100;
     margin: 0 0 20px -5px;
 }
 .advantages-block .information-box {
@@ -1401,9 +1500,11 @@ form .btn {
     overflow: hidden;
 }
 .projects-block h2 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
     margin: 0 0 37px;
     color: #333;
+    font-weight: 100;
 }
 
 .projects-slideshow {
@@ -1438,6 +1539,7 @@ form .btn {
 .projects-slideshow h3 {
     font-size: 24px;
     line-height: 26px;
+    font-weight: 300;
     color: #41a416;
     margin: 0 0 34px;
 }
@@ -1458,6 +1560,7 @@ form .btn {
 .definition-list dt {
     float: left;
     clear: left;
+    font-weight: 500;
 }
 .definition-list dd {
     float: left;
@@ -1474,6 +1577,7 @@ form .btn {
     padding: 0 4px 0 14px;
 }
 .slash-list li:first-child {padding: 0 8px 0 0;}
+.projects-slideshow .slash-list {font-weight: 500;}
 .projects-slideshow blockquote {
     margin: 0;
     padding: 35px 0 0;
@@ -1483,6 +1587,7 @@ form .btn {
 .projects-slideshow q {
     font-size: 12px;
     line-height: 18px;
+    font-weight: 300;
     color: #adadad;
     display: block;
     margin: 0 0 20px;
@@ -1507,8 +1612,10 @@ form .btn {
     z-index: 1;
 }
 .cooperation-block h2 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
     color: #fff;
+    font-weight: 100;
     margin: 0 0 25px;
 }
 .cooperation-block .text-block p {margin: 0 0 35px;}
@@ -1528,6 +1635,7 @@ form .btn {
 .cooperation-block .column h3 {
     font-size: 24px;
     line-height: 26px;
+    font-weight: 300;
     margin: 0 0 30px;
 }
 .apps-services {
@@ -1586,7 +1694,9 @@ form .btn {
 }
 .not-found-block h1 {
     color: #333;
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 38px;
     margin: 0 0 20px;
 }
 .design-services {
@@ -1611,8 +1721,10 @@ form .btn {
     margin: 0 auto;
 }
 .design-services h2 {
-    font:100 36px/38px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 38px;
     color: #333;
+    font-weight: 100;
     margin: 0 0 30px;
 }
 .design-service-list:after {
@@ -1676,7 +1788,7 @@ form .btn {
     font-size: 14px;
     line-height: 16px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     display: inline-block;
     vertical-align: top;
 }
@@ -1695,7 +1807,9 @@ form .btn {
     padding: 125px 0;
 }
 .design-services .text-cloud .text {
-    font:100 22px/26px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
     color: #333;
 }
 .design-services .text-cloud p {margin: 0;}
@@ -1719,7 +1833,9 @@ form .btn {
     vertical-align:middle;
     display:inline-block;
     white-space:normal;
-    font:100 40px/55px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    line-height: 55px;
+    font-weight: 100;
 }
 .seo-inform-box mark {
     color: #41a416;
@@ -1750,6 +1866,7 @@ form .btn {
     white-space: nowrap;
     padding: 8px 13px 7px;
     display: block;
+    font-weight: 300;
 }
 .select-disabled {
     background: #eee;
@@ -1768,6 +1885,7 @@ form .btn {
     overflow: hidden;
     background: #fff;
     z-index: 2000;
+    font-weight: 300;
     margin: 3px 0 0;
 }
 .select-options .drop-holder {
@@ -1814,15 +1932,19 @@ form .btn {
     color: #41a416;
     text-align: center;
     margin: 0 0 27px;
+    font-weight: 300;
 }
 .lightbox h3 {
-    font:100 24px/26px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 100;
     margin: 0 0 10px;
 }
 .lightbox p {margin: 0;}
 .portfolio-form {
     width: 420px;
     margin:0 auto;
+    font-weight: 300;
 }
 .portfolio-form .row:after {
     content:'';
@@ -1846,6 +1968,7 @@ form .btn {
     background: #fff;
     display: inline-block;
     vertical-align: middle;
+    font-weight: 300;
 }
 .portfolio-form .error {position: relative;}
 .portfolio-form .error input[type="text"],
@@ -1855,10 +1978,12 @@ form .btn {
     display: inline-block;
     vertical-align: middle;
     padding: 0 6px 0 0;
+    font-weight: 300;
 }
 .portfolio-form .row .required-sign {
     font-size: 14px;
     line-height: 18px;
+    font-weight: 300;
     display: inline-block;
     vertical-align: top;
 }
@@ -1866,7 +1991,7 @@ form .btn {
     background: #e5645a;
     font-size: 11px;
     line-height: 14px;
-    font-weight: normal;
+    font-weight: 400;
     margin: 0 0 0 3px;
     padding: 4px 4px 3px 4px;
     display: none;
