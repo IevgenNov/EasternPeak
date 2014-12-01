@@ -2020,3 +2020,112 @@ form .btn {
     line-height: 14px;
     color: #999;
 }
+.team-section:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.team-section {
+    width: 100%;
+    margin: 0 0 65px;
+}
+.team-section .title-box {
+    text-align: center;
+    margin: 0 0 55px;
+    color: #333;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.team-section .title-box .sub-title {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 100;
+}
+.team-section .title-box.add {  text-align: left;}
+.team-section .title-box h2 {
+    font-size: 76px;
+    line-height: 78px;
+    color: #41a416;
+    font-weight: 100;
+    margin: 0 0 10px;
+}
+.team-section .title-box.add h2 {color: #333;}
+.team-section .title-box p {margin: 0;}
+.team-info {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.team-info img {
+    float: left;
+    margin: 0 38px 0 0;
+}
+.team-info .text {
+    overflow:hidden;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 300;
+}
+.team-info .text p {margin: 0 0 22px;}
+.team-info:after {
+    content:'';
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    border: 4px solid #8ed16c;
+    bottom: 0;
+    right: 0;
+}
+.team-info h2 {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #333;
+    margin: 0 0 25px;
+}
+.team-stats:after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.team-stats:before {
+    background: #41a416;
+    bottom: 0;
+    content: '';
+    left: -100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.team-stats {
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+.team-stats img {
+    float: right;
+}
+.company-counters {
+    float: left;
+    margin: 141px 0 0;
+}
+.company-counters .counter-box {
+    float: left;
+    margin: 0 0 0 70px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #91d375;
+    font-weight: 300;
+}
+.company-counters .counter-box:first-child {margin: 0;}
+.company-counters .counter-title {
+    font-size: 36px;
+    line-height: 38px;
+    color: #fff;
+    display: block;
+    margin: 0 0 5px;
+    font-weight: 100;
+}
+.company-counters p {margin: 0;}
