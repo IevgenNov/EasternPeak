@@ -62,7 +62,7 @@ body {
     margin:0;
     color:#666;
     font:14px/20px 'HelveticaNeue', Arial, Helvetica, sans-serif;
-    background: url(../images/bg-page.png)  no-repeat 100% 0;
+    background: url(../images/bg-page.jpg)  no-repeat 100% 0;
     border-top: 5px solid #378a13;
 }
 img {border-style:none;}
@@ -1437,10 +1437,9 @@ form .btn {
 .thumbnail {
     display:table-cell;
     width: 191px;
-    padding: 19px 15px 20px;
+    padding: 19px 20px 20px;
     font-weight: 300;
     background: #333;
-    border-radius:3px;
     color: #fff;
     border-left: 29px solid #fff;
 }
@@ -1469,6 +1468,7 @@ form .btn {
     line-height: 18px;
     display: block;
     padding: 12px 0 0;
+    margin: 9px 0 0;
     border-top: 1px solid #5e5e5e;
 }
 .advantages-block {
@@ -1492,6 +1492,7 @@ form .btn {
 .projects-block {
     width: 100%;
     overflow: hidden;
+    margin: 0 0 20px;
 }
 .projects-block h2 {
     font-size: 36px;
@@ -1505,6 +1506,7 @@ form .btn {
 	position: relative;
     text-align: center;
 }
+.projects-slideshow .slideset {margin: 0 0 25px;}
 .projects-slideshow .slide {
     position: absolute;
     z-index: 1;
@@ -1521,29 +1523,30 @@ form .btn {
     padding: 58px 0 0 58px;
 }
 .projects-slideshow .img-holder.wide-img {
-    width: 406px;
+    width: 416px;
     height: 447px;
     background: url(../images/bg-wide-img.jpg) no-repeat;
-    padding: 46px 0 0 29px;
+    padding: 7px 0 0 6px;
 }
 .projects-slideshow .text {
     overflow: hidden;
     line-height: 24px;
+    padding: 7px 0 0;
 }
 .projects-slideshow h3 {
     font-size: 24px;
     line-height: 26px;
     font-weight: 300;
     color: #41a416;
-    margin: 0 0 34px;
+    margin: 0 0 24px;
 }
 .projects-slideshow .btn-more {
     position: absolute;
-    top: 5px;
+    top: -60px;
     right: 0;
     z-index: 3;
 }
-.projects-slideshow p {margin: 0 0 30px;}
+.projects-slideshow p {margin: 0 0 14px;}
 .projects-slideshow .description-list {margin: 0 0 10px;}
 .projects-slideshow .description-list li {padding:0 0 0 19px;}
 .definition-list {
@@ -1561,7 +1564,7 @@ form .btn {
     margin: 0 0 0 12px;
 }
 .slash-list {
-    margin: 0 0 10px;
+    margin: 0 0 15px;
     padding: 0;
     list-style: none;
 }
@@ -1652,22 +1655,22 @@ form .btn {
     min-height: 70px;
     padding: 48px 0 0 84px;
     width: 215px;
-    top: 0;
-    right: 0;
+    top: 1px;
+    right: 18px;
 }
 .apps-services .hybrid {
     background: url(../images/bg-hybrid.jpg)  no-repeat;
     padding: 56px 0 0;
     width: 340px;
-    top: 129px;
-    left: 336px;
+    top: 130px;
+    left: 362px;
 }
 .apps-services .cross-platform {
     background: url(../images/bg-cross-platform.jpg)  no-repeat;
     padding: 58px 0 0;
     width: 240px;
-    bottom: 0;
-    left: 0;
+    bottom: 9px;
+    left: 26px;
 }
 .not-found-holder {
     padding: 83px 0 96px;
@@ -1696,7 +1699,7 @@ form .btn {
 }
 .design-services {
     background: url(../images/sep-02.png)  no-repeat 50% 0;
-    padding: 55px 0;
+    padding: 36px 0 34px;
     line-height: 24px;
     position: relative;
     margin: 0 0 60px;
@@ -1714,13 +1717,14 @@ form .btn {
     text-align: center;
     width: 450px;
     margin: 0 auto;
+    line-height: 20px;
 }
 .design-services h2 {
     font-size: 36px;
     line-height: 38px;
     color: #333;
     font-weight: 100;
-    margin: 0 0 30px;
+    margin: 0 0 27px;
 }
 .design-service-list:after {
     content:'';
@@ -1736,10 +1740,17 @@ form .btn {
     line-height: 24px;
     text-align: center;
 }
+.design-service-list.add {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0 0 7px;
+}
 .design-service-list li {
     display: inline-block;
     vertical-align: top;
     padding: 67px 45px 0;
+    width: 90px;
 }
 .design-service-list.add li {padding-top: 98px;}
 .design-service-list .broshures {background: url(../images/bg-broshures.png)  no-repeat 50% 0;}
@@ -1759,10 +1770,14 @@ form .btn {
 .design-service-list .seo {
     background: url(../images/bg-seo.png)  no-repeat 50% 0;
     margin-top: -85px;
+    width: 136px;
+    padding: 67px 26px 0;
 }
 .design-service-list .smm {
     background: url(../images/bg-smm.png)  no-repeat 50% 0;
     margin-top: 30px;
+    width: 126px;
+    padding: 67px 27px 0;
 }
 .design-service-list .ppc {
     background: url(../images/bg-ppc.png)  no-repeat 50% 0;
