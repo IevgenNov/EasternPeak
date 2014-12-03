@@ -556,6 +556,7 @@ function initSlideShow() {
                 btnPrev: 'a.btn-prev',
                 btnNext: 'a.btn-next',
                 pagerLinks: '.switch-slide',
+                useSwipe: false,
                 maskAutoSize: false,
                 autoRotation: false,
                 switchTime: 3000,

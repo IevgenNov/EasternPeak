@@ -64,6 +64,8 @@ body {
     font:14px/20px 'HelveticaNeue', Arial, Helvetica, sans-serif;
     background: url(../images/bg-page.jpg)  no-repeat 100% 0;
     border-top: 5px solid #378a13;
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust: none;
 }
 img {border-style:none;}
 a {
