@@ -1007,6 +1007,12 @@ function initParallaxBg() {
         parallaxOffset: 100,
         fallbackFunc: initBgStretch
     });
+    jQuery('.sma-customers').parallaxBG({
+        parent: '.bg-frame',
+        image: 'img',
+        parallaxOffset: 100,
+        fallbackFunc: initBgStretch
+    });
 }
 
 ;(function($){
