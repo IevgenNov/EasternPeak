@@ -1,5 +1,5 @@
 // page init
-jQuery(function(){
+jQuery(document).ready(function(){
     initCarousel();
     initSlideShow();
     initOpenClose();
@@ -20,7 +20,7 @@ function initCarousel() {
         pagerLinks: '.pagination li',
         maskAutoSize: false,
         autoRotation: true,
-        switchTime: 3000,
+        switchTime: 9000,
         animSpeed: 500,
         step: 3
     });
@@ -542,9 +542,11 @@ function initSlideShow() {
         btnNext: 'a.btn-next',
         pagerLinks: '.switcher-carousel .switch-slide',
         event: 'click',
+        autorotationStopAfterClick: true,
         disableFadeIE: true,
         useSwipe: true,
-        autoRotation: false,
+        autoRotation: true,
+        pauseOnHover: false,
         autoHeight: true,
         switchTime: 3000,
         animSpeed: 500,
@@ -553,8 +555,8 @@ function initSlideShow() {
                 mask: 'div.switcher-mask',
                 slider: 'div.switcher-slideset',
                 slides: '.switch-slide',
-                btnPrev: 'a.btn-prev',
-                btnNext: 'a.btn-next',
+                btnPrev: 'a.prev',
+                btnNext: 'a.next',
                 pagerLinks: '.switch-slide',
                 useSwipe: false,
                 maskAutoSize: false,
@@ -564,9 +566,11 @@ function initSlideShow() {
                 step: 1
             });
             this.switcherAPI = this.gallery.find('div.switcher-carousel').data('ScrollGallery');
+
         },
         onBeforeChange: function(){
-            var switchSlide = $('.switcher-carousel .active');
+            this.switcherAPI.numSlide(this.currentIndex);
+            var switchSlide = jQuery('.switcher-carousel .active');
             switchSlide.find('.switch-slide-holder').css('margin', '0');
             switchSlide.next().find('.switch-slide-holder').css('margin', '50px 32px 14px 32px');
             switchSlide.next().next().find('.switch-slide-holder').css('margin', '64px 32px 0 32px');
@@ -997,6 +1001,12 @@ function initParallaxBg() {
         parallaxOffset: 100,
         fallbackFunc: initBgStretch
     });
+    jQuery('.team-stats.add').parallaxBG({
+        parent: '.bg-frame',
+        image: 'img',
+        parallaxOffset: 100,
+        fallbackFunc: initBgStretch
+    });
 }
 
 ;(function($){
@@ -1374,6 +1384,7 @@ function initLightbox() {
                         e.preventDefault();
                     });
                 }
+                jQuery('.lightbox').removeClass('ajax-send');
             }
         });
     });
@@ -2608,6 +2619,7 @@ function initValidation() {
 
             if(!successFlag) {
                 e.preventDefault();
+                e.stopImmediatePropagation();
             }
         }
 
@@ -2641,7 +2653,7 @@ function initValidation() {
                 hold.addClass(errorClass);
                 field.one('focus',function(){hold.removeClass(errorClass).removeClass(successClass);});
                 successFlag = false;
-                $('.error .error-message').css('display', 'block').delay(1500).fadeOut(1000);
+                jQuery('.error .error-message').css('display', 'block').delay(1500).fadeOut(1000);
             } else {
                 hold.addClass(successClass);
             }
@@ -2652,18 +2664,108 @@ function initValidation() {
     });
 }
 
-$(function(){
-    $(".visual-block-holder").mousemove(function(e){
-        var mouseX = e.pageX - $('.visual-block-holder').offset().left;
-        var totalX = $('.visual-block-holder').width();
-        var centerX = totalX / 2;
-        var shiftX = centerX - mouseX;
-        $('.bg-mountain').css({ 'left': -112 + shiftX/80});
-        $('.bg-clouds').css({ 'left': -224 + shiftX/90});
-        $('.man').css({ 'left': 227 + shiftX/50});
-    });
+// Grayscale Images fix for IE10-IE11
+var GrayScaleFix = (function() {
+    var needToFix = /(MSIE 10)|(Trident.*rv:11\.0)/.test(navigator.userAgent);
+
+    function replaceImage(image) {
+        var tmpImage = new Image();
+        tmpImage.onload = function() {
+            var imgWrapper = document.createElement('span'),
+                svgTemplate =
+                    '<svg xmlns="http://www.w3.org/2000/svg" id="svgroot" viewBox="0 0 '+tmpImage.width+' '+tmpImage.height+'" width="100%" height="100%">' +
+                    '<defs>' +
+                    '<filter id="gray">' +
+                    '<feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0" />' +
+                    '</filter>' +
+                    '</defs>' +
+                    '<image filter="url(&quot;#gray&quot;)" x="0" y="0" width="'+tmpImage.width+'" height="'+tmpImage.height+'" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="'+tmpImage.src+'" />' +
+                    '</svg>';
+
+            imgWrapper.innerHTML = svgTemplate;
+            imgWrapper.className = 'grayscale-fix';
+            image.parentNode.insertBefore(imgWrapper, image);
+
+            image.style.cssText += 'visibility:hidden;display:block';
+            imgWrapper.querySelector('svg').style.position = 'absolute';
+            imgWrapper.style.cssText = 'display:inline-block;position:relative;';
+            imgWrapper.appendChild(image);
+        };
+        tmpImage.src = image.src;
+    }
+
+    function replaceAll() {
+        var images = document.querySelectorAll('img.grayscale');
+        for(var i = 0; i < images.length; i++) {
+            replaceImage(images[i]);
+        }
+    }
+
+    if(needToFix) {
+        document.addEventListener('DOMContentLoaded', replaceAll);
+    }
+
+    return {
+        replace: replaceImage,
+        refresh: replaceAll
+    };
+}());
+
+jQuery(document).ready(function ($) {
     var switchSlide = $('.switcher-carousel .active');
     switchSlide.find('.switch-slide-holder').css('margin', '0');
     switchSlide.next().find('.switch-slide-holder').css('margin', '50px 32px 14px 32px');
     switchSlide.next().next().find('.switch-slide-holder').css('margin', '64px 32px 0 32px');
-})
+    $('.btn-thanks-popup').click(function(e){
+        e.preventDefault();
+    });
+
+    $('#ninja_forms_form_1, #ninja_forms_form_2, #ninja_forms_form_3, #ninja_forms_form_4').submit(function(e){
+        e.preventDefault();
+           var form = $(this),
+            submitCode = $('#submit_code');
+        $('#ninja_forms_form_2, #ninja_forms_form_3, #ninja_forms_form_4').parent().parent().addClass('ajax-send');
+				
+      	if ($('#ninja_forms_form_1')) {
+        		$(this).find('.btn').val('Please wait...');
+          	$(this).find('.btn').attr('disabled', 'disabled');
+        	}
+       if ($('#ninja_forms_form_4')) {
+        	  $(this).hide();
+         		$('.request-form').append('<h2>Please Wait..</h2>');
+     
+        	}
+      
+   
+        $.ajax({
+            url: "/wp-admin/admin-ajax.php?action=ninja_forms_ajax_submit",
+            type: 'POST',
+            dataType: 'json',
+            data: $(form).serialize(),
+            success: function(data){
+                if (typeof data !== 'undefined') {
+
+
+                    if (data.result == 0) {
+
+                    }
+                    if(data.result == true || data.errors == false) {
+                      console.log($(form).attr('id'));
+                        if ($(this).attr('id') == 'ninja_forms_form_2' || $(this).attr('id') == 'ninja_forms_form_3' ||  $(form).attr('id') == 'ninja_forms_form_4' ) {
+                            window.location = "/thank-you";
+                        }
+                        else {
+                            $('.btn-thanks-popup').trigger('click');
+                        }
+                    }
+
+
+                } else{
+                }
+              
+            },
+                error: function(){
+            }
+        });
+    });
+});
