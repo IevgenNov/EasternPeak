@@ -1413,7 +1413,7 @@ form .btn {
 .service-description .text-holder p {margin: 0 0 30px;}
 .information-box {
   border: 5px solid #6dc442;
-  padding: 22px 25px 15px;
+  padding: 24px 25px 24px;
   text-align: center;
 }
 .information-box h2 {
@@ -3024,3 +3024,85 @@ form .btn {
   margin:0 0 25px;
 }
 .sma-process .block p { margin:0;}
+.sma-analytics {
+  font-size:18px;
+  line-height:30px;
+  color:#fff;
+  padding:90px 0 108px;
+  background:#5a5a5a;
+}
+.sma-analytics .blocks { overflow:hidden;}
+.sma-analytics .block {overflow:hidden;}
+.sma-analytics .block .img-holder {
+  display:table-cell;
+  vertical-align:middle;
+  width:50%;
+}
+.sma-analytics .block .text {
+  width:50%;
+  display:table-cell;
+  vertical-align:middle;
+}
+.sma-analytics .block h3 {
+  color:#86f94b;
+  font-size:24px;
+  line-height:26px;
+  margin:0 0 25px;
+}
+.sma-idea {
+  overflow:hidden;
+  font-size:18px;
+  line-height:30px;
+  padding:115px 0 85px;
+}
+.sma-idea > p {margin:0;}
+.sma-idea h2 {
+  font:100 40px/48px 'HelveticaNeue', Arial, Helvetica, sans-serif;
+  margin:0 0 35px;
+}
+.sma-idea .brands-holder {
+  overflow:hidden;
+  margin:0 0 110px;
+}
+.sma-idea .brand {
+  padding:35px 0;
+  border-top:1px solid #ccc;
+  font-size:14px;
+  line-height:24px;
+  overflow:hidden;
+}
+.sma-idea .brand:first-child {border:none;}
+.sma-idea .brand .description-title {
+  font-size:24px;
+  line-height:26px;
+  font-weight:bold;
+  float:left;
+  padding:0 10px 0 0;
+  width:305px;
+}
+.sma-idea .brand .text {
+  float:left;
+  width:390px;
+  padding:0 10px 0 0;
+}
+.sma-idea .brand p {margin:0;}
+.sma-idea .brand .btn-about {
+  display:inline-block;
+  vertical-align:top;
+  padding:0 20px 0 0;
+  position:relative;
+}
+.sma-idea .brand .btn-about:after {
+  content:'';
+  position:absolute;
+  right:0;
+  top:0;
+  width:17px;
+  height:17px;
+  background:url(../images/sprite.png) no-repeat 0 -157px;
+}
+.sma-idea .brand .logo-holder {
+  width:245px;
+  float:left;
+  text-align:center;
+}
