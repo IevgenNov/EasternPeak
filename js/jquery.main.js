@@ -7,6 +7,8 @@ jQuery(document).ready(function(){
     initLightbox();
     initValidation();
     jcf.customForms.replaceAll();
+
+    ToggleCliker();
 });
 
 // scroll gallery init
@@ -23,6 +25,19 @@ function initCarousel() {
         switchTime: 9000,
         animSpeed: 500,
         step: 3
+    });
+    jQuery('div.web-design-carousel').scrollGallery({
+        mask: 'div.mask',
+        slider: 'div.slideset',
+        slides: 'div.slide',
+        btnPrev: 'a.btn-prev',
+        btnNext: 'a.btn-next',
+        maskAutoSize: false,
+        autoRotation: false,
+        circularRotation: false,
+        switchTime: 9000,
+        animSpeed: 500,
+        step: 1
     });
 }
 
@@ -2775,3 +2790,24 @@ jQuery(document).ready(function ($) {
         });
     });
 });
+
+function ToggleCliker(){
+    //$('.web-design-carousel .slide').each(function(){
+        //var target = $(this).find('a[data-toggle]');
+       // console.log(target);
+        $('.slide a').click(function(e){
+            e.preventDefault();
+            var switchHeper = $(this);
+            var text = switchHeper.attr('data-toggle');
+            $(this).addClass('choosed');
+            $(this).siblings().removeClass('choosed');
+            if (text == 'after'){
+                switchHeper.closest('.slide').find('.'+text).css({display : 'block'});
+                switchHeper.closest('.slide').find('.before').css({display : 'none'});
+            } else {
+                switchHeper.closest('.slide').find('.'+text).css({display : 'block'});
+                switchHeper.closest('.slide').find('.after').css({display : 'none'});
+            }
+        })
+    //});
+}
